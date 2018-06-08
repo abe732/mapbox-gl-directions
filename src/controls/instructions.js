@@ -1,8 +1,9 @@
 import utils from '../utils';
 import template from 'lodash.template';
 import isEqual from 'lodash.isequal';
+import fs from 'react-native-fs';
 
-let fs = require('fs'); // substack/brfs#39
+// let fs = require('fs'); // substack/brfs#39
 let instructionsTemplate = template(fs.readFileSync(__dirname + '/../templates/instructions.html', 'utf8'));
 let errorTemplate = template(fs.readFileSync(__dirname + '/../templates/error.html', 'utf8'));
 
