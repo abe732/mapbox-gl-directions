@@ -2,8 +2,9 @@ import Geocoder from './geocoder';
 import template from 'lodash.template';
 import isEqual from 'lodash.isequal';
 import extent from 'turf-extent';
+import fs from 'react-native-fs';
 
-let fs = require('fs'); // substack/brfs#39
+// let fs = require('fs'); // substack/brfs#39
 let tmpl = template(fs.readFileSync(__dirname + '/../templates/inputs.html', 'utf8'));
 
 /**
